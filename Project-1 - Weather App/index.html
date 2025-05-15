@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Weather App with Live Location Map</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvUVxJdCZpAwpZdyFjgsu9vzFwdbRHmW0" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="weather-card">
+      <h1>⛅ Weather App</h1>
+      <div class="input-group">
+        <input id="searchInput" type="text" placeholder="Enter city name" />
+        <button id="searchBtn">Search</button>
+        <button id="detectBtn" class="location-btn">Detect My Location</button>
+      </div>
+      <div class="unit-toggle">
+        <button id="celsiusBtn" class="active">°C</button>
+        <button id="fahrenheitBtn">°F</button>
+      </div>
+
+      <div id="weatherOutput" style="display:none;"></div>
+
+      <div class="forecast-container" id="forecast" style="display:none;"></div>
+
+      <h2>📍 Live Location Map</h2>
+      <div id="map" class="map-container"></div>
+
+      <div class="alert" id="alertBox" style="display:none;"></div>
+    </div>
+  </div>
+</body>
+</html>
